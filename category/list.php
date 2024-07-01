@@ -48,13 +48,13 @@
                         <td class='px-2 text-start'>".$item['created_at']."</td>
                         <td class='px-2 text-start'>".$item['updated_at']."</td>
                         <td class='px-2 text-start d-flex justify-content-center'>
-                            <button class='btn btn-primary mx-2'>Edit</button>
-                            <button class='btn btn-danger'>Delete</button>
+                            <a href='update.php'><button class='btn btn-primary mx-2'>Edit</button></a>
+                            <a href='../db/delete.php?id=".$item['id']."'><button class='btn btn-danger'>Delete</button></a>
                         </td>
                     </tr>";
                     }
                     ?>;
-
+                        
                     </tbody>
                 </table>
             </div>
